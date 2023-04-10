@@ -1,12 +1,5 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import {
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView,
-  Platrform,
-  StatusBar,
-} from "react-native";
+import { StyleSheet, SafeAreaView, StatusBar } from "react-native";
 import Search from "./src/features/Search";
 import List from "./src/features/List";
 
@@ -14,9 +7,7 @@ export default function App() {
   return (
     <>
       <SafeAreaView style={styles.container}>
-        <Search
-        // style={styles.searchContainer}
-        />
+        <Search />
         <List />
       </SafeAreaView>
       <ExpoStatusBar style="auto" />
